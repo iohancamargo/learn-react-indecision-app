@@ -1,0 +1,40 @@
+.big-button{
+    width: 100%;
+    border: none;
+    color: #fff;
+    padding: 2.4rem;
+    font-weight: bold;
+    font-size: $l-size;
+    margin-bottom: $m-size;
+    background-color: $purple;
+    border-bottom: .6rem solid darken($purple, 10%);
+}
+
+.big-button:disabled{
+    opacity: .5;
+}
+
+.button{
+    border:none;
+    color: #fff;
+    font-weight: 500;
+    padding: $s-size;
+    background-color: $purple;
+    border-bottom: .3rem solid darken($purple,10%);
+
+}
+
+// Modifier com sass
+.button--link{
+    padding:0;
+    border: none;
+    background: none;
+    color: $off-white;
+}
+
+@media(min-width: $desktop-breakpoint) {
+    .big-button{
+        margin-bottom: $xl-size;
+    }
+
+}
